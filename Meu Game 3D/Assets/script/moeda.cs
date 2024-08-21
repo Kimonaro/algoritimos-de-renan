@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class moeda : MonoBehaviour
 {
+    public int velocidadeGiro = 50;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class moeda : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(eulers:Vector3.up * velocidadeGiro * Time.deltaTime, relativeTo:Space.World);
     }
 }
