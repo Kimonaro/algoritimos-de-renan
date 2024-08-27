@@ -611,8 +611,8 @@ Transform:
   m_GameObject: {fileID: 179401535}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00016229355, y: 0.0004503854, z: -0.0019555076, w: 0.999998}
-  m_LocalPosition: {x: 31.4749, y: 18.9424, z: 4.3968}
-  m_LocalScale: {x: 25.125765, y: 0.04022016, z: 23.365564}
+  m_LocalPosition: {x: 38.5584, y: 18.9147, z: 4.3905}
+  m_LocalScale: {x: 10.958489, y: 0.04022016, z: 23.365564}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1384,6 +1384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ContadorMoedas: {fileID: 1279855784}
   MsgFim: {fileID: 371275797}
+  restantes: 0
 --- !u!4 &1073986168
 Transform:
   m_ObjectHideFlags: 0
@@ -1949,7 +1950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.00006, y: -22.04544}
+  m_AnchoredPosition: {x: 243.00006, y: -22.04541}
   m_SizeDelta: {x: 486, y: 45.092804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279855784
