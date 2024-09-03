@@ -13,13 +13,17 @@ public class Player : MonoBehaviour
     public int forcaPulo = 7;
     public bool noChao;
     Rigidbody rb;
+    private AudioSource source;
     
     
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log(message:"START");
+        
         TryGetComponent(out rb);
+        TryGetComponent(out source);
+        
         gameObject.name = "HOMEM ARANHA";
     }
 
@@ -46,6 +50,7 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(Vector3.up * forcaPulo, ForceMode.Impulse);
             noChao = false;
+            source.Play();
         }
         
         
