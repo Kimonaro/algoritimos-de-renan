@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public bool noChao;
     Rigidbody rb;
     private AudioSource source;
+    public Transform checkPoint;
     
     
     // Start is called before the first frame update
@@ -34,6 +35,14 @@ public class Player : MonoBehaviour
             noChao = true;
 
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "checkpoint")
+                         {
+                             checkPoint = other.transform;
+                         }
     }
 
     // Update is called once per frame
@@ -57,7 +66,8 @@ public class Player : MonoBehaviour
         
         if(transform.position.y <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            transform.position = checkPoint.position;
         }
        
     }
